@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="stylesheet" href="style.css"
+  <head>
+  <body>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nervorum Biotechnologies — L-Theafetamine (Dark Theme)</title>
+  <style>
+    :root {
+      --bg-dark: #0B1120;
+      --bg-card: #101827;
+      --primary: #38BDF8;
+      --secondary: #8B5CF6;
+      --text-light: #F1F5F9;
+      --muted: #94A3B8;
+      --border: #1E293B;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+    }
+    .stage {
+      width: 1200px;
+      margin: 24px auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      overflow: hidden;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 16px 24px;
+      background: var(--bg-dark);
+      border-bottom: 1px solid var(--border);
+    }
+    .logo .brand {
+      font-size: 22px;
+      color: var(--primary);
+      font-weight: bold;
+    }
+    .logo .tag {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .search {
+      margin-left: auto;
+    }
+    .search input {
+      padding: 8px 12px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      background: var(--bg-dark);
+      color: var(--text-light);
+    }
+    .content {
+      display: flex;
+      gap: 20px;
+      padding: 24px;
+    }
+    .card {
+      flex: 0 0 800px;
+      border-left: 4px solid var(--primary);
+      padding: 20px;
+      background: var(--bg-card);
+      border-radius: 6px;
+    }
+    .card h1 {
+      margin: 0;
+      font-size: 26px;
+      color: var(--primary);
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .field {
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg-dark);
+    }
+    .label {
+      font-size: 13px;
+      font-weight: bold;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .value {
+      font-size: 15px;
+    }
+    .synonyms {
+      font-family: monospace;
+      font-size: 13px;
+      color: var(--text-light);
+    }
+    .molecular-weight {
+      font-weight: bold;
+      color: var(--primary);
+    }
+    .description {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+    .image-field {
+      margin-top: 12px;
+      text-align: center;
+    }
+    .image-field img {
+      max-width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg-dark);
+      padding: 6px;
+    }
+    .sidebar {
+      width: 260px;
+    }
+    .toc {
+      background: var(--bg-dark);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px;
+    }
+    .toc h3 {
+      margin: 0 0 8px 0;
+      font-size: 14px;
+      color: var(--primary);
+    }
+    .toc ul {
+      list-style: none;
+      padding: 0;
+    }
+    .toc li {
+      margin: 6px 0;
+    }
+    .toc li a {
+      display: block;
+      padding: 6px 10px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--text-light);
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .toc li a:hover {
+      background: var(--secondary);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <header>
+      <div class="logo">
+        <div class="brand">Nervorum Biotechnologies</div>
+        <div class="tag"></div>
+      </div>
+      <div class="search">
+        <input placeholder="Search Nervorum Compounds">
+      </div>
+    </header>
+    <div class="content">
+      <main class="card" aria-labelledby="compound-title">
+        <h1 id="compound-title">  (2S)-2-amino-5-(ethylamino)-N-(1-methyl-2-phenylethyl)-5-oxopentanamide</h1>
+        <div class="meta">
+          <div class="field">
+            <div class="label">Compound ID</div>
+            <div class="value">NV-LT-AF-002</div>
+          </div>
+          <div class="field">
+            <div class="label">Structure</div>
+            <div class="value">
+              <img src="./l-theafetamine-structure.png" alt="Structure image" style="max-width:150px; border:1px solid var(--border); padding:4px; background:var(--bg-dark);">
+            </div>
+          </div>
+          <div class="field">
+            <div class="label">Primary Properties</div>
+            <div class="value">
+              Dual-acting prodrug combining dexamfetamine and L-theanine<br>
+              Pharmacologically inert until enzymatic hydrolysis<br>
+              Designed to reduce abuse liability and provide neuromodulation
+            </div>
+          </div>
+          <div class="field">
+            <div class="label">Molecular Formula</div>
+            <div class="value">C<sub>16</sub>H<sub>25</sub>N<sub>3</sub>O<sub>2</sub> (example)<br>MW ≈ ~291 g/mol</div>
+          </div>
+          <div class="field">
+            <div class="label">Synonyms</div>
+            <div class="value synonyms">
+              L-Theafetamine<br>
+              L-Theanine–conjugated Dexamfetamine<br>
+    
+            </div>
+          </div>
+          <div class="field">
+            <div class="label">Molecular Weight</div>
+            <div class="value molecular-weight">~291 g/mol<br><span style="font-size:12px; color: var(--muted)">Computed from Nervorum cheminformatics</span></div>
+          </div>
+      
+          <div class="field" style="grid-column: span 2;">
+            <div class="label">Description</div>
+            <div class="value description">
+              L-Theafetamine is a novel dual-acting prodrug consisting of D-amphetamine covalently linked to L-theanine through an amide bond. This construct is inactive until enzymatically cleaved in vivo, releasing both stimulant and neuromodulatory components. The design delays CNS activation, reduces dopaminergic spikes, and provides anxiolytic and neuroprotective effects.<br><br>
+              Applications include treatment of ADHD, narcolepsy, depression, and cognitive fatigue. The prodrug offers reduced abuse potential compared to traditional stimulants.
+            </div>
+          </div>
+        </div>
+
+        <section id="synthesis" class="field">
+          <div class="label">Synthesis</div>
+          <div class="value description">
+            The synthesis strategy couples D-amphetamine (Formula I) with L-theanine (Formula II) to yield L-Theafetamine (Formula III). Key steps include:<br>
+            • Preparation of a protected L-theanine intermediate (benzyloxycarbonyl group preferred).<br>
+            • Amide coupling with D-amphetamine.<br>
+            • Deprotection under hydrogenation to yield the conjugate.<br>
+            • Crystalline intermediates enable purification by crystallization.<br><br>
+            The method achieves >99.9% purity even from low-purity amphetamine starting material, making it scalable for pharmaceutical manufacturing.
+            <div class="image-field">
+              <img src="./synthesis-schematic.png" alt="Synthesis schematic placeholder">
+            </div>
+          </div>
+        </section>
+
+        <section id="pharmacology" class="field">
+          <div class="label">Pharmacology</div>
+          <div class="value description">
+            • Dual release: stimulant + neuromodulator.<br>
+            • Cleaved by red blood cell amidases, plasma esterases, and hepatic peptidases.<br>
+            • Modulates dopamine, glutamate, and GABA pathways.<br>
+            • Adjustable release kinetics via linker chemistry and formulation.
+            <div class="image-field">
+              <img src="./pharmacology-figure.png" alt="Pharmacology schematic placeholder">
+            </div>
+          </div>
+        </section>
+
+        <section id="salts" class="field">
+          <div class="label">Salt Forms</div>
+          <div class="value description">
+            L-Theafetamine and analogues can form pharmaceutically acceptable salts, including hydrochloride, sulfate, phosphate, tartrate, fumarate, and citrate salts. Salt forms aid in stability, solubility, and formulation versatility.
+          </div>
+        </section>
+
+      </main>
+      <nav class="sidebar">
+        <div class="toc">
+          <h3>PUBLISHED ON</h3>
+          <ul>
+            <li><a href="#compound-title">PUBCHEM IDXXXX</a></li>
+            <li><a href="#compound-title">GOOGLE PATENTS</a></li>
+             <h3>CONTENTS</h3>
+          <ul>
+            <li><a href="#compound-title">1 Title & Summary</a></li>
+            <li><a href="#synthesis">2 Synthesis</a></li>
+            <li><a href="#compound-title">3 Names & Identifiers</a></li>
+            <li><a href="#compound-title">4 Properties</a></li>
+            <li><a href="#pharmacology">5 Pharmacology</a></li>
+            <li><a href="#salts">6 Salt Forms</a></li>
+            <li><a href="#compound-title">7 Applications</a></li>
+
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</body>
+</html>

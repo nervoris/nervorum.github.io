@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> | Nervorum Biotechnologies Inc.</title>
+  <link rel="stylesheet" href="style.css"> <!-- keep your external CSS -->
+  <style>
+    :root {
+      --bg-dark: #0f0f0f;
+      --bg-mid: #1c1c1c;
+      --bg-light: #1c1c1c; /* dark section background for white text */
+      --text-light: #ffffff; /* all text white */
+      --accent: #00ccff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+    a { color: var(--accent); text-decoration: none; }
+
+    /* Header */
+    header {
+      background: var(--bg-mid);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 { font-size: 1.5rem; font-weight: 700; color: var(--text-light); }
+    nav a {
+      margin-left: 2rem;
+      font-weight: 500;
+      color: var(--text-light);
+      transition: color 0.3s;
+    }
+    nav a:hover { color: var(--accent); }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 6rem 1rem 4rem 1rem;
+      background: linear-gradient(180deg, #111111 0%, #1a1a1a 100%);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text-light);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-light);
+    }
+    .hero img {
+      max-width: 400px;
+      width: 100%;
+      margin-top: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    }
+
+    /* Container for sections */
+    .container { max-width: 1000px; margin: 3rem auto; padding: 0 1rem; }
+
+    section {
+      background: var(--bg-light);
+      color: var(--text-light);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+      color: var(--text-light);
+    }
+
+    /* Info Lists */
+    .info-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    .info-list div {
+      background: var(--bg-mid);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .info-list div h3 { font-size: 1rem; color: var(--accent); margin-bottom: 0.3rem; }
+    .info-list div p { font-size: 0.95rem; color: var(--text-light); }
+
+    /* Footer */
+    footer {
+      background: var(--bg-mid);
+      color: var(--text-light);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+    footer a { color: var(--accent); }
+
+    @media (max-width: 768px) {
+      header { flex-direction: column; text-align: center; gap: 1rem; }
+      .hero h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Parallax Pixel Background Animation -->
+  <section class="animated-background">
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </section>
+
+  <!-- Header / Nav -->
+  <header>
+    <h1>Nervorum Biotechnologies Inc.</h1>
+    <nav>
+      <a href="https://nervorum.com">Home</a>
+      <a href="https://nervorum.com/findings">Findings</a>
+    </nav>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>L-Theafetamine</h2>
+    <p>Dual-acting prodrug combining a CNS stimulant (d-amphetamine) with L-theanine, designed for delayed CNS activation, neuromodulation, and reduced abuse liability.</p>
+    <img src="https://via.placeholder.com/400" alt="Molecule Structure">
+  </section>
+
+  <!-- Detailed Info Section -->
+  <div class="container">
+    <section>
+      <h2>Overview & Identification</h2>
+      <div class="info-list">
+        <div>
+          <h3>IUPAC</h3>
+          <p>(2S)-2-amino-5-(ethylamino)-N-(1-methyl-2-phenylethyl)-5-oxopentanamide</p>
+        </div>
+        <div>
+          <h3>Formula</h3>
+          <p>C16H25N3O2</p>
+        </div>
+        <div>
+          <h3>Molecular Weight</h3>
+          <p>291.195</p>
+        </div>
+        <div>
+          <h3>CAS Number</h3>
+          <p>Not assigned (novel compound)</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Physical & Chemical Properties</h2>
+      <div class="info-list">
+   <div>
+          <h3>logP</h3>
+          <p>0.69</p>
+        </div>
+   <div>
+          <h3>Most basic pKa</h3>
+          <p>8.23</p>
+        </div>
+   <div>
+          <h3>Most Acidic pKa</h3>
+          <p>15.73</p>
+        </div>    </section>
+<section>
+
+
+              <h2>PH-Dependent Properties</h2>
+              <h3> Solubility (Log S)<h3> 
+<img src="solubility.png" style="width: 900px; height: auto;" />
+<h3> Lipophilicity (Log D)
+<img src="lipophilic.png" style="width: 900px; height: auto;" />
+        <div>
+          <section>
+ <p>Methodology:
+Values obtained using cheminformatics modeling  <p>
+
+ <p> Results: <p> 
+<p> 	•	logS (solubility) vs. pH: shows a rapid decrease in solubility between pH 6–8, plateauing beyond pH 9.<p> 
+<p> 	•	logD (lipophilicity) vs. pH: increases from ~–2.5 at acidic pH to +0.5 at pH > 9.<p> 
+<p> 	•	Interpretation: Compound is ionized in acidic environments (enhancing solubility) and becomes neutral/lipophilic in basic or physiological pH (enhancing absorption and enzymatic activation).<p> 
+<p>Conclusion: <p>
+<p>These data support the compound’s function as a pH-responsive, amphiphilic prodrug designed for enzymatic hydrolysis into L-theanine and amphetamine.
+    </section>
+
+    <section>
+      <h2>Applications & Uses</h2>
+      <div class="info-list">
+        <div>
+          <h3>Research Use</h3>
+          <p>Study of stimulant pharmacokinetics, dual-acting neuromodulatory prodrugs, CNS drug delivery.</p>
+        </div>
+        <div>
+          <h3>Therapeutic Potential</h3>
+          <p>Treatment of ADHD, narcolepsy, treatment-resistant depression, cognitive fatigue syndromes.</p>
+        </div>
+        <div>
+          <h3>Industrial / Pharma</h3>
+          <p>Prodrug design, novel CNS-active pharmaceutical development.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Safety & Handling</h2>
+      <div class="info-list">
+        <div>
+          <h3>PPE</h3>
+          <p>Standard laboratory protective equipment; gloves, lab coat, goggles.</p>
+        </div>
+        <div>
+          <h3>Storage</h3>
+          <p>Controlled environment, low humidity, room temperature; protect from light.</p>
+        </div>
+        <div>
+          <h3>Hazards</h3>
+          <p>Novel stimulant; handle according to research chemical safety guidelines. Potential CNS stimulant effects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>References</h2>
+      <ul>
+        <li><a href="#"> </a></li>
+        <li><a href="#"> </a></li>
+        <li><a href="#"> </a></li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Nervorum Biotechnologies Inc. | <a href="mailto:info@nervorum.com">Contact</a>
+  </footer>
+
+</body>
+</html>
