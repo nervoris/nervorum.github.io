@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xanthamine | Nervorum Biotechnologies Inc.</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --bg-dark: #0f0f0f;
+      --bg-mid: #1c1c1c;
+      --bg-light: #1c1c1c;
+      --text-light: #ffffff;
+      --accent: #00ccff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+    a { color: var(--accent); text-decoration: none; }
+
+    header {
+      background: var(--bg-mid);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 { font-size: 1.5rem; font-weight: 700; color: var(--text-light); }
+    nav a {
+      margin-left: 2rem;
+      font-weight: 500;
+      color: var(--text-light);
+      transition: color 0.3s;
+    }
+    nav a:hover { color: var(--accent); }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 1rem 4rem 1rem;
+      background: linear-gradient(180deg, #111111 0%, #1a1a1a 100%);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text-light);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-light);
+    }
+    .hero img {
+      max-width: 400px;
+      width: 100%;
+      margin-top: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    }
+
+    .container { max-width: 1000px; margin: 3rem auto; padding: 0 1rem; }
+
+    section {
+      background: var(--bg-light);
+      color: var(--text-light);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+      color: var(--text-light);
+    }
+
+    .info-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    .info-list div {
+      background: var(--bg-mid);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .info-list div h3 { font-size: 1rem; color: var(--accent); margin-bottom: 0.3rem; }
+    .info-list div p { font-size: 0.95rem; color: var(--text-light); }
+
+    footer {
+      background: var(--bg-mid);
+      color: var(--text-light);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+    footer a { color: var(--accent); }
+
+    @media (max-width: 768px) {
+      header { flex-direction: column; text-align: center; gap: 1rem; }
+      .hero h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="animated-background">
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </section>
+
+  <header>
+    <h1>Nervorum Biotechnologies Inc.</h1>
+    <nav>
+      <a href="https://nervorum.com">Home</a>
+      <a href="https://nervorum.com/findings">Findings</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Xanthamine</h2>
+    <p>a novel N1‑substituted xanthine derivative featuring a bulky N1 substituent, it is disclosed as a CNS‑active agent</p>
+    <img src="Xanthamine.png" alt="Molecule Structure">
+  </section>
+
+  <div class="container">
+    <section>
+      <h2>Overview & Identification</h2>
+      <div class="info-list">
+        <div><h3>IUPAC</h3><p>3,7-dimethyl-1-(1-methyl-2-phenylethyl)-3,7-dihydro-2H-purine-2,6(1H)-dione</p></div>
+        <div><h3>Formula</h3><p>C16H18N4O2</p></div>
+        <div><h3>Molecular Weight</h3><p>298.34 g/mol</p></div>
+        <div><h3>LogP</h3><p>1.24</p></div>
+        <div><h3>Hydrogen Bond Donors</h3><p>0</p></div>
+        <div><h3>Hydrogen Bond Acceptors</h3><p>6</p></div>
+        <div><h3>Rotatable Bonds</h3><p>3</p></div>
+        <div><h3>SMILES</h3><p>CC(Cc1ccccc1)N(C(c1c(N2C)nc[n]1C)=O)C2=O</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Computational Methods</h2>
+      <p>All data for Xanthamine were derived from computational studies. Molecular properties were predicted using cheminformatics and docking tools including RDKit, SwissADME, and AutoDock Vina. Energy minimizations and molecular docking were performed to assess CNS permeability, receptor binding, and lipophilicity. These results are theoretical and not based on any in vitro or in vivo testing.</p>
+    </section>
+
+    <section>
+      <h2>Predicted Pharmacological Applications</h2>
+      <p>Xanthamine is predicted to function as a CNS stimulant through adenosine receptor antagonism and possible dopaminergic or noradrenergic modulation. Computational models indicate potential utility in cognitive enhancement and attention-related disorders such as ADHD or narcolepsy. These predictions are derived solely from in silico simulations and molecular docking analyses.</p>
+    </section>
+
+    <section>
+      <h2>Physicochemical & Computational Data</h2>
+      <div class="info-list">
+        <div><h3>Formal Charge</h3><p>0</p></div>
+        <div><h3>Isomeric SMILES</h3><p>CC(Cc1ccccc1)N(C(c1c(N2C)nc[n]1C)=O)C2=O</p></div>
+        <div><h3>Stereocenter</h3><p>1 (R/S possible)</p></div>
+        <div><h3>Docking Score (A2A receptor)</h3><p>−8.2 kcal/mol (predicted)</p></div>
+        <div><h3>TPSA</h3><p>~60 Å²</p></div>
+        <div><h3>Predicted BBB Permeability</h3><p>High</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Future Work</h2>
+      <p>Future efforts include in silico ADMET modeling, virtual screening of analogs, and exploration of receptor subtype selectivity. No wet-lab synthesis or biological assays have yet been performed. Experimental validation will follow pending intellectual property protection and computational prioritization of analog structures.</p>
+    </section>
+
+    <section>
+      <h2>Disclaimer</h2>
+      <p>All findings presented on this page are based on computational predictions. Xanthamine has not been synthesized or tested in humans or animals. The information is provided for theoretical and research communication purposes only and should not be interpreted as experimental or clinical data.</p>
+    </section>
+
+    <section>
+      <h2>References</h2>
+      <ul>
+        <li>Xanthamine Priority Disclosure (Nervorum LLC, Nov 9, 2025)</li>
+        <li>Computational prediction data generated using RDKit, SwissADME, and AutoDock Vina</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Nervorum Biotechnologies Inc. | <a href="mailto:info@nervorum.com">Contact</a>
+  </footer>
+
+</body>
+</html>
